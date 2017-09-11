@@ -27,8 +27,8 @@ mkdir -p /var/log/supervisor/
 mkdir -p /var/log/apache2/
 
 # For Openzwave
-wget https://raw.githubusercontent.com/jeedom/plugin-openzwave/master/resources/install.sh -O /root/openzwave_install.sh
-chmod +x /root/openzwave_install.sh
-/root/openzwave_install.sh
+#wget https://raw.githubusercontent.com/jeedom/plugin-openzwave/master/resources/install.sh -O /root/openzwave_install.sh
+#chmod +x /root/openzwave_install.sh
+#/root/openzwave_install.sh
 
 /usr/bin/supervisord

@@ -30,7 +30,6 @@ RUN /root/install_docker.sh -s 10;exit 0
 ADD https://raw.githubusercontent.com/jeedom/plugin-openzwave/master/resources/install.sh /root/openzwave_install.sh
 RUN chmod +x /root/openzwave_install.sh
 RUN /root/openzwave_install.sh
-RUN rm /root/openzwave_install.sh
 
 # Lancement
 ADD install/OS_specific/Docker/init.sh /root/init.sh
