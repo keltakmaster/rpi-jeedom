@@ -27,9 +27,9 @@ RUN /root/install_docker.sh -s 7;exit 0
 RUN /root/install_docker.sh -s 10;exit 0
 
 # For Openzwave
-ADD https://raw.githubusercontent.com/jeedom/plugin-openzwave/master/resources/install_apt.sh /root/openzwave_install.sh
+ADD openzwave/resources/install_apt.sh /root/openzwave_install.sh
 RUN chmod +x /root/openzwave_install.sh
-ADD /openzwave/plugin-openzwave/resources/python-openzwave /root/python-openzwave
+ADD openzwave/resources/python-openzwave /root/python-openzwave
 RUN /root/openzwave_install.sh || echo "openzwave installé"
 RUN rm -f /root/openzwave_install.sh
 
